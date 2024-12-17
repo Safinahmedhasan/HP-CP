@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <title>Café Elegante</title>
+    <style>
+      .hero-gradient {
+        background: linear-gradient(to right, #3c1f10, #8b4513);
+      }
+      .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      .hover-scale {
+        transition: transform 0.3s ease;
+      }
+      .hover-scale:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body class="bg-amber-50">
+    <!-- Navigation -->
+    <nav
+      class="bg-gradient-to-r from-brown-900 to-amber-900 text-white p-6 fixed w-full z-50 transition-all duration-300"
+    >
+      <div
+        class="container mx-auto flex flex-col md:flex-row justify-between items-center"
+      >
+        <div class="flex items-center space-x-4">
+          <img
+            src="https://i.pinimg.com/736x/39/3b/b1/393bb1bb15940aea508dd07c5da23917.jpg"
+            alt="Logo"
+            class="w-12 h-12 rounded-full"
+          />
+          <h1 class="text-3xl font-serif">Café Elegante</h1>
+        </div>
+        <div class="mt-4 md:mt-0 space-x-8 text-lg">
+          <a
+            href="#"
+            class="hover:text-amber-200 transition-colors duration-300"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="hover:text-amber-200 transition-colors duration-300"
+            >Menu</a
+          >
+          <a
+            href="#"
+            class="hover:text-amber-200 transition-colors duration-300"
+            >Gallery</a
+          >
+          <a
+            href="#"
+            class="hover:text-amber-200 transition-colors duration-300"
+            >About</a
+          >
+          <button
+            class="bg-amber-600 px-6 py-2 rounded-full hover:bg-amber-500 transition-colors duration-300 ml-4"
+          >
+            Order Now
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative h-screen flex items-center justify-center">
+      <img
+        src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"
+        alt="Hero Coffee"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+      
+      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div class="relative text-center text-white z-10 px-4" data-aos="fade-up">
+        <h2 class="text-6xl font-serif mb-6 text-shadow">
+          Artisanal Coffee Experience
+        </h2>
+        <p class="text-2xl mb-8 text-amber-200">
+          Where every cup tells a story
+        </p>
+        <div class="space-x-4">
+          <button
+            class="bg-amber-600 text-white px-8 py-4 rounded-full hover:bg-amber-500 transition-all duration-300 transform hover:scale-105"
+          >
+            Explore Menu
+          </button>
+          <button
+            class="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-amber-900 transition-all duration-300"
+          >
+            Book Table
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Products -->
+    <section class="py-20 container mx-auto px-4">
+      <h2 class="text-4xl font-serif text-center mb-16" data-aos="fade-up">
+        Signature Collection
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <!-- Coffee Card 1 -->
+        <div
+          class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"
+          data-aos="fade-up"
+        >
+          <div class="relative">
+            <img
+              src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04"
+              alt="Specialty Coffee"
+              class="w-full h-64 object-cover"
+            />
+            <div
+              class="absolute top-4 right-4 bg-amber-600 text-white px-4 py-1 rounded-full"
+            >
+              Bestseller
+            </div>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-serif mb-3">Ethiopian Gold</h3>
+            <p class="text-gray-600 mb-4">
+              Single-origin Ethiopian beans with notes of jasmine and citrus
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-amber-800">$5.90</span>
+              <button
+                class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full hover:bg-amber-200 transition"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coffee Card 2 -->
+        <div
+          class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="relative">
+            <img
+              src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735"
+              alt="Specialty Latte"
+              class="w-full h-64 object-cover"
+            />
+          
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-serif mb-3">Vanilla Dream Latte</h3>
+            <p class="text-gray-600 mb-4">
+              Smooth espresso with vanilla bean and silky steamed milk
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-amber-800">$6.50</span>
+              <button
+                class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full hover:bg-amber-200 transition"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coffee Card 3 -->
+        <div
+          class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="relative">
+            <img
+              src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735"
+              alt="Cold Brew"
+              class="w-full h-64 object-cover"
+            />
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-serif mb-3">Nitro Cold Brew</h3>
+            <p class="text-gray-600 mb-4">
+              24-hour steeped cold brew charged with nitrogen for perfect crema
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-amber-800">$5.75</span>
+              <button
+                class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full hover:bg-amber-200 transition"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section
+      class="py-20 bg-gradient-to-r from-amber-900 to-amber-800 text-white"
+    >
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div data-aos="fade-right">
+            <h2 class="text-4xl font-serif mb-8">
+              Experience Coffee Perfection
+            </h2>
+            <p class="text-lg mb-6">
+              Our master baristas craft each cup with precision and passion,
+              using only the finest beans sourced from sustainable farms
+              worldwide.
+            </p>
+            <div class="grid grid-cols-2 gap-8 mt-12">
+              <div>
+                <h3 class="text-3xl font-bold text-amber-300 mb-2">15+</h3>
+                <p>Years of Excellence</p>
+              </div>
+              <div>
+                <h3 class="text-3xl font-bold text-amber-300 mb-2">50k+</h3>
+                <p>Happy Customers</p>
+              </div>
+              <div>
+                <h3 class="text-3xl font-bold text-amber-300 mb-2">12</h3>
+                <p>Signature Drinks</p>
+              </div>
+              <div>
+                <h3 class="text-3xl font-bold text-amber-300 mb-2">3</h3>
+                <p>Global Awards</p>
+              </div>
+            </div>
+          </div>
+          <div class="relative" data-aos="fade-left">
+            <img
+              src="https://images.unsplash.com/photo-1511920170033-f8396924c348"
+              alt="Barista"
+              class="rounded-2xl shadow-2xl"
+            />
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-20 bg-amber-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-serif text-center mb-16" data-aos="fade-up">
+          Coffee Gallery
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div
+            class="relative overflow-hidden rounded-lg hover-scale"
+            data-aos="zoom-in"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1442512595331-e89e73853f31"
+              alt="Gallery 1"
+              class="w-full h-64 object-cover"
+            />
+           
+          </div>
+          <div
+            class="relative overflow-hidden rounded-lg hover-scale"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"
+              alt="Gallery 2"
+              class="w-full h-64 object-cover"
+            />
+            
+          </div>
+          <div
+            class="relative overflow-hidden rounded-lg hover-scale"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb"
+              alt="Gallery 3"
+              class="w-full h-64 object-cover"
+            />
+          </div>
+          <div
+            class="relative overflow-hidden rounded-lg hover-scale"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1442512595331-e89e73853f31"
+              alt="Gallery 4"
+              class="w-full h-64 object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+          <div>
+            <h3 class="text-2xl font-serif mb-6">Café Elegante</h3>
+            <p class="text-gray-400">
+              Crafting perfect moments, one cup at a time.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-xl mb-6">Visit Us</h4>
+            <p class="text-gray-400">123 Coffee Lane</p>
+            <p class="text-gray-400">New York, NY 10001</p>
+            <p class="text-gray-400 mt-4">+1 (555) 123-4567</p>
+          </div>
+          <div>
+            <h4 class="text-xl mb-6">Hours</h4>
+            <p class="text-gray-400">Mon-Fri: 7:00 AM - 8:00 PM</p>
+            <p class="text-gray-400">Sat-Sun: 8:00 AM - 9:00 PM</p>
+          </div>
+          <div>
+            <h4 class="text-xl mb-6">Newsletter</h4>
+            <div class="flex">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="bg-gray-800 px-4 py-2 rounded-l-full focus:outline-none focus:ring-2 focus:ring-amber-500"
+              />
+              <button
+                class="bg-amber-600 px-6 rounded-r-full hover:bg-amber-500 transition"
+              >
+                Join
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
+        >
+          <p>&copy; 2024 Café Elegante. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+  </body>
+</html>
